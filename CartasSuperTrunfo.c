@@ -18,7 +18,7 @@ int main(){
     float pib2;
 
     printf ("Bem Vindo ao Super Trunfo Países \n");
-    printf ("\nPrimeiramente faremos as configurações das suas cartas e para isso preciso da sua ajuda\n");
+    printf ("\nPrimeiramente faremos as configurações da sua primeira carta!\n");
 
     //Interação usuário - máquina para configuração das cartas
 
@@ -32,13 +32,13 @@ int main(){
 
     getchar ();
 
-    printf ("O nome da Cidade representada: ");
+    printf ("O nome da Cidade: ");
     scanf ("%[^\n]", cidade1);
 
-    printf ("Número de habitantes dessa cidade: ");
+    printf ("Número de habitantes: ");
     scanf ("%d", &populacao1);
 
-    printf ("Agora a área em KM dessa cidade: ");
+    printf ("Agora a área em KM: ");
     scanf ("%f", &area1);
 
     printf ("Por favor, me informe o PIB dessa cidade: ");
@@ -47,16 +47,59 @@ int main(){
     printf ("Por último, quantos pontos turísticos existem nessa cidade: ");
     scanf ("%d", &turismo1);
 
-    //"Resultado dos dados da carta";
+    //"Resultado dos dados da 1ª carta";
 
     printf ("\n--- Perfeito, sua primeira carta ficou assim ---\n");
     printf ("Carta 1:\n");
-    printf ("Estado: %s.\n", estado1);
     printf ("Código: %c%d.\n",codigo1, carta1);
+    printf ("Estado: %s.\n", estado1);
     printf ("Cidade: %s.\n", cidade1);
     printf ("População: %d mil habitantes.\n", populacao1);
     printf ("Área: %.3f km².\n", area1);
     printf ("PIB: %.1fR$ bilhões de reais.\n", pib1);
-    printf ("Pontos turísticos: %d atrações.\n", turismo1); 
+    printf ("Pontos turísticos: %d atrações.\n", turismo1);
+
+    //Dados da segunda carta
+
+    printf ("\nAgora me informe os dados da segunda carta!\n");
+
+    printf ("\nNovamente, uma letra entre A e H e um número entre 1 e 4");
+    printf ("\nSem ser os dados utilizados na primeira carta: ");
+    scanf (" %c%d", &codigo2, &carta2);
+
+    getchar ();
+
+    printf ("O Estado que esta carta irá representar: ");
+    scanf ("%[^\n]", estado2);
+
+    getchar ();
+
+    printf ("O nome da Cidade: ");
+    scanf ("%[^\n]", cidade2);
+
+    printf ("Número de habitantes: ");
+    scanf ("%d", &populacao2);
+
+    printf ("Agora a área em KM: ");
+    scanf ("%f", &area2);
+
+    printf ("Por favor, me informe o PIB dessa cidade: ");
+    scanf ("%f", &pib2);
+
+    printf ("Por último, quantos pontos turísticos existem nessa cidade: ");
+    scanf ("%d", &turismo2);
+
+    //"Resultado dos dados da 2ª carta";
+
+    printf ("\n--- Maravilha, sua segunda carta ficou assim ---\n");
+    printf ("Carta 2:\n");
+    printf ("Código: %c%d.\n",codigo2, carta2);
+    printf ("Estado: %s.\n", estado2);
+    printf ("Cidade: %s.\n", cidade2);
+    printf ("População: %d mil habitantes.\n", populacao2);
+    printf ("Área: %.3f km².\n", area2);
+    printf ("PIB: %.1fR$ bilhões de reais.\n", pib2);
+    printf ("Pontos turísticos: %d atrações.\n", turismo2);
+
     return 0;
 }
