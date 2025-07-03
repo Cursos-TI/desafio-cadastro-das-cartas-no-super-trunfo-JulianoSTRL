@@ -20,7 +20,7 @@ int main(){
     //Interação usuário - máquina para configuração das cartas
 
     printf ("\nPor Favor, digite uma letra entre A e H, e um número entre 1 e 4: \n");
-    scanf ("%c%d", &codigo1, &carta1);
+    scanf (" %c%d", &codigo1, &carta1);
 
     getchar ();
 
@@ -62,7 +62,7 @@ int main(){
 
     printf ("\nNovamente, uma letra entre A e H e um número entre 1 e 4");
     printf ("\nSem ser os dados utilizados na primeira carta: \n");
-    scanf ("%c%d", &codigo2, &carta2);
+    scanf (" %c%d", &codigo2, &carta2);
 
     getchar ();
 
